@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  background-color: $main-color;
+  display: flex;
+  flex-direction: row;
+
+  &__banner {
+    width: 100%;
+  }
+
+  &__right-side {
+    display: flex;
+    align-items: center;
+    padding-right: 8rem;
+  }
+}

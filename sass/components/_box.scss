@@ -1,0 +1,20 @@
+.box {
+  width: calc(100%/4);
+  display: inline-block;
+  border: 1px solid black;
+  margin: 0 1.6rem;
+
+  &__img-container {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text-container {
+    padding: 0 3rem 2.4rem 1.6rem;
+    text-align: left;
+  }
+}
