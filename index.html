@@ -9,16 +9,25 @@
   </head>
   <body>
     <!-- Navigation bar section -->
-    <nav class="navigation">
-
+    <nav class="nav">
+      <div class="nav__logo-container">
+        <img src="img/ic-logo.svg" alt="logo" class="nav__logo">
+        <span class="nav__span">colmaracademy</span>
+      </div>
+      <div class="nav__navigation">
+        <a href="#" class="nav__navigation">On campus</a>
+        <a href="#" class="nav__navigation">Online</a>
+        <a href="#" class="nav__navigation">Companies</a>
+        <a href="#" class="nav__navigation">Sign in</a>
+      </div>
     </nav>
     <!-- Header section -->
     <header class="header">
       <div class="header__left-side main-column u-4-side-margin">
         <img src="img/banner.jpg" alt="banner" class="header__banner">
       </div>
-      <div class="header__right-side secondary-column">
-        <div class="header__right-side-content u-left-margin-small">
+      <div class="header__right-side secondary-column u-4-side-margin-small">
+        <div class="header__right-side-content">
           <h1 class="heading-1 u-margin-bottom-big">Learn something new everyday</h1>
           <p class="heading-1__paragraph u-margin-bottom-big">Lorem ipsum dolor sit amet, consectetur adipisicing
            elit.</p>
@@ -41,31 +50,31 @@
         </div>
         <!-- right side section -->
         <div class="about__right-side secondary-column">
-            <div class="about__small-content u-4-side-margin">
+            <div class="small-content u-4-side-margin--small">
                 <div class="about__small-img-container">
                   <img src="img/information-orientation.jpg" alt="information" class="about__small-img">
                 </div>
-                <div class="about__small-content-info">
+                <div class="small-content--info">
                   <h3 class="heading-3">Orientation date</h3>
                   <p class="paragraph__small">Tue 10/11 & Wed 10/12: 8am-3pm</p>
                   <a href="#" class="read-more">Read more</a>
                 </div>
             </div>
-            <div class="about__small-content u-4-side-margin">
+            <div class="small-content u-4-side-margin--small">
                 <div class="about__small-img-container">
                   <img src="img/information-campus.jpg" alt="information" class="about__small-img">
                 </div>
-                <div class="about__small-content-info">
+                <div class="small-content--info">
                   <h3 class="heading-3">Our campus</h3>
                   <p class="paragraph__small">Find which campus is closed by you</p>
                   <a href="#" class="read-more">Read more</a>
                 </div>
             </div>
-            <div class="about__small-content u-4-side-margin">
+            <div class="small-content u-4-side-margin--small">
                 <div class="about__small-img-container">
                   <img src="img/information-guest-lecture.jpg" alt="information" class="about__small-img">
                 </div>
-                <div class="about__small-content-info">
+                <div class="small-content--info">
                   <h3 class="heading-3">Our guest lecture</h3>
                   <p class="paragraph__small">Join a keynote with Oliver Sack about music in medical treatment</p>
                   <a href="#" class="read-more">Read more</a>
@@ -75,9 +84,9 @@
       </section>
       <!-- Learning section -->
       <section class="learning">
-        <h class="heading-2">Start learning</h>
+        <h class="heading-2 heading-2--center">Start learning</h>
         <div class="learning__container">
-          
+          <!-- Box -->
             <div class="box u-margin-bottom-big">
               <div class="box__img-container">
                 <img src="img/course-software.jpg" alt="gallery image" class="box__img">
@@ -88,7 +97,7 @@
                 <p class="paragraph">Web development, Mobile Development, iOT, APIs</p>
               </div>
             </div>
-
+              <!-- Box -->
             <div class="box u-margin-bottom-big">
               <div class="box__img-container">
                 <img src="img/course-computer-art.jpg" alt="gallery image" class="box__img">
@@ -99,7 +108,7 @@
                 <p class="paragraph">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
               </div>
             </div>
-
+              <!-- Box -->
             <div class="box u-margin-bottom-big">
               <div class="box__img-container">
                 <img src="img/course-design.jpg" alt="gallery image" class="box__img">
@@ -110,7 +119,7 @@
                 <p class="paragraph">User Experience Design, User Research, Visual Design</p>
               </div>
             </div>
-
+              <!-- Box -->
             <div class="box u-margin-bottom-big">
               <div class="box__img-container">
                 <img src="img/course-data.jpg" alt="gallery image" class="box__img">
@@ -121,7 +130,7 @@
                 <p class="paragraph">Data Science, Big Data, SQL, Data Visualization</p>
               </div>
             </div>
-
+              <!-- Box -->
             <div class="box u-margin-bottom-big">
               <div class="box__img-container">
                 <img src="img/course-business.jpg" alt="gallery image" class="box__img">
@@ -132,7 +141,7 @@
                 <p class="paragraph">Product Development, Business Development, Startup</p>
               </div>
             </div>
-
+              <!-- Box -->
             <div class="box u-margin-bottom-big">
               <div class="box__img-container">
                 <img src="img/course-marketing.jpg" alt="gallery image" class="box__img">
@@ -145,6 +154,60 @@
             </div>
         </div>
       </section>
+
+      <!-- Thesis Section -->
+
+      <section class="thesis">
+        <h class="heading-2 heading-2--center">Thesis exhibit</h>
+        <!-- Right side -->
+      <div class="thesis__flex-container">
+        <div class="thesis__right-side main-column u-4-side-margin">
+          <div class="thesis__video-container u-margin-bottom-medium">
+            <video class="thesis__video" controls>
+              <source src="videos/thesis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+            <h3 class="heading-3 u-margin-bottom-small">Reimagine urban</h3>
+            <p class="paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+        <!-- Left side -->
+        <div class="thesis__left-side secondary-column">
+          <div class="small-content u-4-side-margin--small">
+              <div class="about__small-img-container">
+                <img src="img/thesis-fisma.jpg" alt="information" class="about__small-img">
+              </div>
+              <div class="small-content--info">
+                <h3 class="heading-3">Fisma: Design and Prototype</h3>
+                <p class="paragraph__small">Designer showcase of new prototype product</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+          </div>
+          <div class="small-content u-4-side-margin--small">
+              <div class="about__small-img-container">
+                <img src="img/thesis-now-and-then.jpg" alt="information" class="about__small-img">
+              </div>
+              <div class="small-content--info">
+                <h3 class="heading-3">Now and then</h3>
+                <p class="paragraph__small">Research study about New York</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      </section>
     </main>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy;Colmar Academy. Allrights reserved.
+      </p>
+      <div class="footer__privacy">
+        <span class="footer__span">Terms</span>
+        <span class="footer__span">Privacy</span>
+      </div>
+    </footer>
   </body>
 </html>
