@@ -111,7 +111,7 @@ body {
   display: block;
   position: relative; }
   .read-more:link, .read-more:visited {
-    color: #23B1A5; }
+    color: #2980B9; }
 
 .footer {
   font-size: 1.2rem;
@@ -281,7 +281,7 @@ body {
   font-size: 2rem;
   text-decoration: none;
   text-align: center;
-  color: #23B1A5;
+  color: #4f4f4f;
   border-radius: 2px;
   overflow: hidden; }
 
