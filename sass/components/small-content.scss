@@ -1,9 +1,31 @@
 .small-content {
   display: flex;
   align-items: center;
+  position: relative;
+
+  &::before {
+    content:"";
+    width: 57%;
+    height: .1rem;
+    @include thin-line;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    content:"";
+    width: 57%;
+    height: .1rem;
+    @include thin-line;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
   &--info {
     width: 100%;
     padding: 1rem 2rem;
+    position: relative;
   }
 }

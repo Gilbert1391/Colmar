@@ -2,76 +2,127 @@ body {
   font-family: lato, sans-serif;
   font-weight: 400;
   line-height: 1.3;
-  color: $light-text-color;
 }
-
 
 .nav {
 
-  &__span {
+  &__text-logo-container {
+    border-top: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
+  }
+  &__text-logo {
     font-size: 2rem;
     text-transform: uppercase;
+    // text-decoration: underline;
+
+    &--2 {
+      color: #2980B9;
+    }
+    &--1 {
+      color: #DE3C3C;
+    }
   }
 
   &__navigation {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 .8rem;
     text-decoration: none;
+    color: $main-color;
 
     &:link, &:visited {
-      color: $light-text-color;
+      color: $main-color;
     }
   }
 }
 
-
 .paragraph {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
+  color: $dark-gray;
 
   &__small {
     font-size: 1.5rem;
     font-weight: 300;
     margin: .8rem 0;
+    color: $dark-gray;
   }
 
   &__reference {
     font-size: 1.2rem;
+    color: $dark-gray;
   }
 }
 
 .heading-1 {
   font-size: 4rem;
   font-weight: 700;
+  color: $secondary-color;
 
   &__paragraph {
     font-size: 2rem;
     font-weight: 400;
+    color: $secondary-color;
    }
  }
 
  .heading-2 {
    font-size: 3rem;
    font-weight: 700;
+   color: $main-color;
 
-   &--center {
-     padding-top: 3.2rem;
+   &--center-1 {
+     padding: 3.2rem 0;
      display: block;
      text-align: center;
+     position: relative;
+
+     &::before {
+       content:"";
+       width: 60%;
+       height: .1rem;
+       margin-left: 2.4rem;
+       @include thin-line;
+       position: absolute;
+       top: 0;
+       left: 0;
+     }
    }
+
+   &--center-2 {
+    padding: 3.2rem 0;
+    display: block;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content:"";
+      width: 95.2%;
+      height: .1rem;
+      margin-left: 2.4rem;
+      @include thin-line;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
  }
 
  .heading-3 {
    font-size: 2rem;
    font-weight: 400;
+   color: $dark-gray;
+
+   &--video {
+     color: $main-color;
+   }
 
    &__span {
-     font-size: 2rem;
+     font-size: 1.8rem;
      font-weight: 300;
      text-transform: uppercase;
      display: block;
-     margin-bottom: .8rem;
+     color: $dark-gray;
    }
  }
 
@@ -79,16 +130,24 @@ body {
    font-size: 1.5rem;
    font-weight: 400;
    text-decoration: none;
+   display: block;
+   position: relative;
 
-   // &:link, &:visited {
-   //   color: #eee;
-   // }
- }
+   &:link, &:visited {
+     color: $main-color;
+  }
+}
 
  .footer {
    font-size: 1.2rem;
+   color: $secondary-color;
 
-   &__span {
+   &__link {
      margin: 0 1rem;
+
+     &:link, &:visited {
+       color: $secondary-color;
+       text-decoration: none;
+     }
    }
  }

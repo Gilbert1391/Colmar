@@ -11,10 +11,15 @@
     <!-- Navigation bar section -->
     <nav class="nav">
       <div class="nav__logo-container">
-        <img src="img/ic-logo.svg" alt="logo" class="nav__logo">
-        <span class="nav__span">colmaracademy</span>
+        <div class="nav__img-container">
+          <img src="img/ic-logo.svg" alt="logo" class="nav__logo">
+        </div>
+        <div class="nav__text-logo-container">
+          <span class="nav__text-logo nav__text-logo--1">colmar</span>
+          <span class="nav__text-logo nav__text-logo--2">academy</span>
+        </div>
       </div>
-      <div class="nav__navigation">
+      <div class="nav__navigation-container">
         <a href="#" class="nav__navigation">On campus</a>
         <a href="#" class="nav__navigation">Online</a>
         <a href="#" class="nav__navigation">Companies</a>
@@ -49,7 +54,7 @@
           </div>
         </div>
         <!-- right side section -->
-        <div class="about__right-side secondary-column">
+        <div class="about__right-side secondary-column--side">
             <div class="small-content u-4-side-margin--small">
                 <div class="about__small-img-container">
                   <img src="img/information-orientation.jpg" alt="information" class="about__small-img">
@@ -84,7 +89,7 @@
       </section>
       <!-- Learning section -->
       <section class="learning">
-        <h class="heading-2 heading-2--center">Start learning</h>
+        <h class="heading-2 heading-2--center-1">Start learning</h>
         <div class="learning__container">
           <!-- Box -->
             <div class="box u-margin-bottom-big">
@@ -94,7 +99,7 @@
               <div class="box__text-container">
                 <h3 class="heading-3 u-margin-bottom-small">Software engineering</h3>
                 <span class="heading-3__span">course</span>
-                <p class="paragraph">Web development, Mobile Development, iOT, APIs</p>
+                <p class="paragraph__small">Web development, Mobile Development, iOT, APIs</p>
               </div>
             </div>
               <!-- Box -->
@@ -105,7 +110,7 @@
               <div class="box__text-container">
                 <h3 class="heading-3 u-margin-bottom-small">Computer art</h3>
                 <span class="heading-3__span">course</span>
-                <p class="paragraph">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                <p class="paragraph__small">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
               </div>
             </div>
               <!-- Box -->
@@ -116,7 +121,7 @@
               <div class="box__text-container">
                 <h3 class="heading-3 u-margin-bottom-small">Design</h3>
                 <span class="heading-3__span">course</span>
-                <p class="paragraph">User Experience Design, User Research, Visual Design</p>
+                <p class="paragraph__small">User Experience Design, User Research, Visual Design</p>
               </div>
             </div>
               <!-- Box -->
@@ -127,7 +132,7 @@
               <div class="box__text-container">
                 <h3 class="heading-3 u-margin-bottom-small">Data</h3>
                 <span class="heading-3__span">course</span>
-                <p class="paragraph">Data Science, Big Data, SQL, Data Visualization</p>
+                <p class="paragraph__small">Data Science, Big Data, SQL, Data Visualization</p>
               </div>
             </div>
               <!-- Box -->
@@ -138,7 +143,7 @@
               <div class="box__text-container">
                 <h3 class="heading-3 u-margin-bottom-small">Business</h3>
                 <span class="heading-3__span">course</span>
-                <p class="paragraph">Product Development, Business Development, Startup</p>
+                <p class="paragraph__small">Product Development, Business Development, Startup</p>
               </div>
             </div>
               <!-- Box -->
@@ -149,30 +154,28 @@
               <div class="box__text-container">
                 <h3 class="heading-3 u-margin-bottom-small">Marketing</h3>
                 <span class="heading-3__span">course</span>
-                <p class="paragraph">Analytics, Content Marketing, Mobile Marketing</p>
+                <p class="paragraph__small">Analytics, Content Marketing, Mobile Marketing</p>
               </div>
             </div>
         </div>
       </section>
-
       <!-- Thesis Section -->
-
       <section class="thesis">
-        <h class="heading-2 heading-2--center">Thesis exhibit</h>
+        <h class="heading-2 heading-2--center-2">Thesis exhibit</h>
         <!-- Right side -->
       <div class="thesis__flex-container">
-        <div class="thesis__right-side main-column u-4-side-margin">
+        <div class="thesis__right-side main-column">
           <div class="thesis__video-container u-margin-bottom-medium">
             <video class="thesis__video" controls>
               <source src="videos/thesis.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
           </div>
-            <h3 class="heading-3 u-margin-bottom-small">Reimagine urban</h3>
+            <h3 class="heading-3 heading-3--video u-margin-bottom-small">Reimagine urban</h3>
             <p class="paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
         </div>
         <!-- Left side -->
-        <div class="thesis__left-side secondary-column">
+        <div class="thesis__left-side secondary-column--side">
           <div class="small-content u-4-side-margin--small">
               <div class="about__small-img-container">
                 <img src="img/thesis-fisma.jpg" alt="information" class="about__small-img">
@@ -197,16 +200,14 @@
       </div>
       </section>
     </main>
-
     <!-- Footer Section -->
-
     <footer class="footer">
       <p class="footer__copyright">
         &copy;Colmar Academy. Allrights reserved.
       </p>
       <div class="footer__privacy">
-        <span class="footer__span">Terms</span>
-        <span class="footer__span">Privacy</span>
+        <a href="#" class="footer__link">Terms</a>
+        <a href="#" class="footer__link">Privacy</a>
       </div>
     </footer>
   </body>

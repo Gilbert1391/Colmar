@@ -4,4 +4,8 @@
 
 .secondary-column {
   width: 40%;
+
+  &--side {
+    background-color: $tertiary-color;
+  }
 }

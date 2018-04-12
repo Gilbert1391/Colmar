@@ -1,9 +1,10 @@
 .btn {
   display: block;
-  background-color: lightblue;
+  background-color: $tertiary-color;
   padding: 1.5rem 2rem;
   font-size: 2rem;
   text-decoration: none;
   text-align: center;
-  color: white;
+  color: $main-color;
+  @include border-radius;
 }
