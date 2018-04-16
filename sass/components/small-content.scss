@@ -3,6 +3,10 @@
   align-items: center;
   position: relative;
 
+  @include phones {
+    display: block;
+  }
+
   &::before {
     content:"";
     width: 57%;
@@ -11,6 +15,10 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    @include phones {
+      display: none;
+    }
   }
 
   &::after {
@@ -21,6 +29,10 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    
+    @include phones {
+      display: none;
+    }
   }
 
   &--info {

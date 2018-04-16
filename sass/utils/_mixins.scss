@@ -9,3 +9,12 @@
 @mixin thin-line {
   background-color: $main-color;
 }
+
+/* MEDIA QUERY MANAGER
+
+0 - 600px:  phone
+*/
+
+@mixin phones {
+  @media only screen and (max-width:56.25em) {@content}; //900 px
+}

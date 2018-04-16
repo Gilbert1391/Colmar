@@ -5,6 +5,11 @@
   flex-direction: row;
   padding-top: 6.4rem;
 
+  @include phones {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__banner {
     width: 100%;
     @include shadow;
@@ -15,5 +20,11 @@
     display: flex;
     align-items: center;
     padding-right: 8rem;
+
+    @include phones {
+      padding: 3.2rem 1.6rem;
+      display: flex;
+      justify-content: center;
+    }
   }
 }

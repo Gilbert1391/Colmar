@@ -13,6 +13,9 @@ body {
   &__text-logo {
     font-size: 2rem;
     text-transform: uppercase;
+    @include phones {
+      display: none;
+    }
 
     &--2 {
       color: #2980B9;
@@ -27,6 +30,9 @@ body {
     font-weight: 400;
     text-decoration: none;
     color: $main-color;
+    @include phones {
+      display: none;
+    }
 
     &:not(:last-child) {
       margin-right: .8rem;
@@ -42,6 +48,10 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   color: $dark-gray;
+
+  @include phones {
+    display: none;
+  }
 
   &__small {
     font-size: 1.5rem;
@@ -88,6 +98,10 @@ body {
        position: absolute;
        top: 0;
        left: 0;
+
+       @include phones {
+         display: none;
+       }
      }
    }
 
@@ -106,6 +120,10 @@ body {
       position: absolute;
       top: 0;
       left: 0;
+
+      @include phones {
+        display: none;
+      }
     }
   }
  }
@@ -115,8 +133,16 @@ body {
    font-weight: 400;
    color: $dark-gray;
 
+   @include phones {
+     font-size: 5vw;
+   }
+
    &--video {
      color: $main-color;
+
+     @include phones {
+       display: none;
+     }
    }
 
    &__span {
@@ -146,6 +172,10 @@ body {
 
    &__link {
      margin: 0 1rem;
+
+     @include phones {
+       display: none;
+     }
 
      &:link, &:visited {
        color: $secondary-color;

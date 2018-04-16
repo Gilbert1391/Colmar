@@ -2,6 +2,19 @@
   display: flex;
   flex-direction: row;
 
+  &__right-side {
+
+    @include phones {
+      width: 100vw;
+    }
+  }
+
+  &__left-side {
+    @include phones {
+      display: none;
+    }
+  }
+
   &__img {
     width: 100%;
     @include shadow;
@@ -10,7 +23,19 @@
 
   &__small-img {
     width: 100%;
-    // @include border-radius;
+
+    @include phones {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include phones {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -22,6 +47,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    @include phones {
+      flex-direction: column;
+      padding: 0 1.6rem;
+    }
   }
 }
 
@@ -29,6 +59,17 @@
 
   &__right-side {
     margin: 0 2.4rem 3.2rem 2.4rem;
+
+    @include phones {
+      margin: 0 !important;
+    }
+  }
+
+  &__left-side {
+
+    @include phones {
+      display: none;
+    }
   }
 
   &__flex-container {
