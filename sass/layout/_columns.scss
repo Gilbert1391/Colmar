@@ -1,8 +1,8 @@
 .main-column {
-  max-width: 60%;
+  width: 60%;
 
   @include phones {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -15,5 +15,10 @@
 
   &--side {
     background-color: $tertiary-color;
+    width: 40%;
+
+    @include phones {
+      width: 100%;
+    }
   }
 }

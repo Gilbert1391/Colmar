@@ -12,9 +12,13 @@
 
 /* MEDIA QUERY MANAGER
 
-0 - 600px:  phone
+0 - 900px:  phone/tablet-portrait
 */
 
 @mixin phones {
   @media only screen and (max-width:56.25em) {@content}; //900 px
+}
+
+@mixin big-screen {
+  @media only screen and (min-width:112em) {@content}; //1800 px
 }

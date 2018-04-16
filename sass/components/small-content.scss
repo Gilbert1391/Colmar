@@ -16,6 +16,10 @@
     top: 0;
     right: 0;
 
+    @include big-screen {
+      width: 28vw;
+    }
+
     @include phones {
       display: none;
     }
@@ -29,7 +33,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    
+
+    @include big-screen {
+      width: 28vw;
+    }
+
     @include phones {
       display: none;
     }

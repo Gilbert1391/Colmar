@@ -1,6 +1,6 @@
 /* MEDIA QUERY MANAGER
 
-0 - 600px:  phone
+0 - 900px:  phone/tablet-portrait
 */
 *, *::before, *::after {
   padding: 0;
@@ -11,7 +11,10 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 55%; } }
+      font-size: 50%; } }
+  @media only screen and (min-width: 112em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -85,7 +88,7 @@ body {
     position: relative; }
     .heading-2--center-1::before {
       content: "";
-      width: 60%;
+      width: 57.5%;
       height: .1rem;
       margin-left: 2.4rem;
       background-color: #23B1A5;
@@ -195,7 +198,7 @@ body {
     transform: rotate(360deg) scale(1); } }
 
 .nav__text-logo-container {
-  animation: movement 800ms cubic-bezier(0.165, 0.84, 0.44, 1) 800ms; }
+  animation: movement 1200ms cubic-bezier(0.165, 0.84, 0.44, 1) 800ms; }
 
 @keyframes movement {
   50% {
@@ -348,10 +351,10 @@ body {
         justify-content: center; } }
 
 .main-column {
-  max-width: 60%; }
+  width: 60%; }
   @media only screen and (max-width: 56.25em) {
     .main-column {
-      max-width: 100%; } }
+      width: 100%; } }
 
 .secondary-column {
   width: 40%; }
@@ -359,7 +362,11 @@ body {
     .secondary-column {
       width: 100%; } }
   .secondary-column--side {
-    background-color: #FFDD7E; }
+    background-color: #FFDD7E;
+    width: 40%; }
+    @media only screen and (max-width: 56.25em) {
+      .secondary-column--side {
+        width: 100%; } }
 
 .footer {
   height: 15rem;
@@ -433,6 +440,9 @@ body {
     position: absolute;
     top: 0;
     right: 0; }
+    @media only screen and (min-width: 112em) {
+      .small-content::before {
+        width: 28vw; } }
     @media only screen and (max-width: 56.25em) {
       .small-content::before {
         display: none; } }
@@ -444,6 +454,9 @@ body {
     position: absolute;
     bottom: 0;
     right: 0; }
+    @media only screen and (min-width: 112em) {
+      .small-content::after {
+        width: 28vw; } }
     @media only screen and (max-width: 56.25em) {
       .small-content::after {
         display: none; } }
